@@ -1,3 +1,15 @@
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover__title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Arial;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +22,57 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.home__cover {
+  height: 100vh;
+}
+
+.about__cover {
+  height: 50vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  background-color: #3c3c3b;
+}
+.header__nav {
+  flex-grow: 1;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  position: relative;
+}
+.header__item:hover .header__list-sublinks {
+  opacity: 1;
+  pointer-events: initial;
+}
+.header__list-sublinks {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background-color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+.header__button {
+  background-color: #ffffff;
+  color: #3c3c3b;
+}
+.header__button:hover {
+  background-color: #fcc421;
+  color: #ffffff;
+  transition: all 0.25s ease-out;
+}
+
+.cover {
+  background-color: grey;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
